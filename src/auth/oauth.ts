@@ -172,7 +172,7 @@ export function createOAuthRouter(config: OAuthConfig) {
     googleAuthUrl.searchParams.append("response_type", "code");
     googleAuthUrl.searchParams.append("client_id", config.clientId);
     googleAuthUrl.searchParams.append("redirect_uri", config.redirectUri);
-    googleAuthUrl.searchParams.append("scope", "https://www.googleapis.com/auth/tasks");
+    googleAuthUrl.searchParams.append("scope", "https://www.googleapis.com/auth/tasks.readonly");
     googleAuthUrl.searchParams.append("state", internalState);
     googleAuthUrl.searchParams.append("access_type", "offline");
     googleAuthUrl.searchParams.append("prompt", "consent");
